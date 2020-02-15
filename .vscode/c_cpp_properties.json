@@ -3,9 +3,16 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\Users\\Mathias Illian\\AppData\\Local\\Arduino15\\packages\\Optiboot\\hardware\\avr\\0.8.0\\**"
+                "C:\\Users\\Mathias\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\**",
+                "C:\\Users\\Mathias\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\**",
+                "C:\\Users\\Mathias Illian\\Documents\\Arduino\\libraries\\FastLED",
+                "C:\\Users\\Mathias Illian\\Documents\\Arduino\\libraries\\ELClient",
+                "C:\\Users\\Mathias Illian\\AppData\\Local\\Arduino15\\packages\\Optiboot\\hardware\\avr\\0.8.0\\**",
+                "C:\\Users\\Mathias\\AppData\\Local\\Arduino15\\packages\\Optiboot\\hardware\\avr\\0.8.0\\**"
             ],
-            "forcedInclude": [],
+            "forcedInclude": [
+                "C:\\Users\\Mathias\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\cores\\arduino\\Arduino.h"
+            ],
             "intelliSenseMode": "msvc-x64",
             "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe",
             "cStandard": "c11",

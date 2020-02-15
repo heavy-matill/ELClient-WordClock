@@ -1,3 +1,10 @@
+#include <ELClient.h>
+#include <ELClientCmd.h>
+#include <ELClientMqtt.h>
+#include <ELClientResponse.h>
+#include <ELClientRest.h>
+#include <FP.h>
+
 /**
  * Simple example to demo the esp-link MQTT client
  */
@@ -5,7 +12,7 @@
 #include <ELClient.h>
 #include <ELClientCmd.h>
 #include <ELClientMqtt.h>
-#include "FastLED.h"
+#include <FastLED.h>
 #include <LEDMatrix.h>
 
 
@@ -235,7 +242,8 @@ uint8_t tMin(uint32_t tSecTot)
 
 uint8_t tHour(uint32_t tSecTot)
 {
-  return tSecTot/3600%12;  
+  // Winterzeit: -1, Sommerzeit +-0
+  return (tSecTot/3600-1)%12;  
 }
 
 void displayIdx(uint8_t idx[])

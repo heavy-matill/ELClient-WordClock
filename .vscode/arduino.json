@@ -1,5 +1,6 @@
 {
-    "port": "COM7",
-    "board": "Optiboot:avr:optiboot28",
-    "configuration": "mhz=16MHz,cpu=atmega328p"
+    "port": "COM5",
+    "board": "arduino:avr:pro",
+    "configuration": "cpu=16MHzatmega328",
+    "sketch": "ELClient_MQTT_WordClock_LEDMatrix.ino"
 }
